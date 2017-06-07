@@ -100,6 +100,7 @@ row += 1
 #Lists
 ttk.Label(main, text = "Lists").grid(column = 0, row = row, sticky = W)
 ttk.Button(main, text = "Consistency", command = lambda: pyperclip.copy(r"Items in a list should all be grammatically sound with the lead-in.")).grid(column = 1, row = row, sticky = (W, E))
+ttk.Button(main, text = "Punctuation", command = lambda: pyperclip.copy(r"There's no need for any punctuation when the lead-in to a list is grammatically sound with the contents.")).grid(column = 2, row = row, sticky = (W, E))
 ttk.Button(main, text = "Summary", command = lambda: pyperclip.copy(r"Here's a guide to grammar around lists. Take a look at the section starting with 'Each listed item also needs to begin in a way that is grammatically compatible with the introductory phrase or clause'. :)")).grid(column = 3, row = row, sticky = (W, E))
 ttk.Button(main, text = "Link", command = lambda: pyperclip.copy(r"https://www.gsbe.co.uk/grammar-lists.html")).grid(column = 4, row = row, sticky = (W, E))
 
