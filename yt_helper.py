@@ -21,7 +21,7 @@ row = 0
 #Conjugation
 ttk.Label(main, text = "Conjugation").grid(column = 0, row = row, sticky = W)
 ttk.Button(main, text = "Verb", command = lambda: pyperclip.copy(r"Check the conjugation on this verb.")).grid(column = 1, row = row, sticky = (W, E))
-ttk.Button(main, text = "Other", command = lambda: pyperclip.copy(r"What does this refer to? Is this the right form?")).grid(column = 2, row = row, sticky = (W, E))
+ttk.Button(main, text = "Other", command = lambda: pyperclip.copy(r"What does this refer to? Is this the right form? :)")).grid(column = 2, row = row, sticky = (W, E))
 ttk.Button(main, text = "Summary", command = lambda: pyperclip.copy(r"Check the conjugation on your verbs. Make sure you know what the subject is before you write a verb. :)")).grid(column = 3, row = row, sticky = (W, E))
 ttk.Button(main, text = "Link", command = lambda: pyperclip.copy(r"http://conjugator.reverso.net/conjugation-english.html")).grid(column = 4, row = row, sticky = (W, E))
 
@@ -29,9 +29,9 @@ row += 1
 
 #Articles
 ttk.Label(main, text = "Articles").grid(column = 0, row = row, sticky = W)
-ttk.Button(main, text = "None", command = lambda: pyperclip.copy(r"This needs an article.")).grid(column = 1, row = row, sticky = (W, E))
-ttk.Button(main, text = "Wrong", command = lambda: pyperclip.copy(r"Try another article.")).grid(column = 2, row = row, sticky = (W, E))
-ttk.Button(main, text = "Summary", command = lambda: pyperclip.copy(r"Check your nouns to make sure their articles are correct. :) I've highlighted a number of examples of these for you.")).grid(column = 3, row = row, sticky = (W, E))
+ttk.Button(main, text = "None", command = lambda: pyperclip.copy(r"This needs an article. :)")).grid(column = 1, row = row, sticky = (W, E))
+ttk.Button(main, text = "Wrong", command = lambda: pyperclip.copy(r"Try another article. :)")).grid(column = 2, row = row, sticky = (W, E))
+ttk.Button(main, text = "Summary", command = lambda: pyperclip.copy(r"Here's a guide to articles that you may find helpful. :)")).grid(column = 3, row = row, sticky = (W, E))
 ttk.Button(main, text = "Link", command = lambda: pyperclip.copy(r"http://www.davidappleyard.com/english/articles.htm")).grid(column = 4, row = row, sticky = (W, E))
 
 row += 1
@@ -39,24 +39,24 @@ row += 1
 #Abstract noun
 ttk.Label(main, text = "Abstract").grid(column = 0, row = row, sticky = W)
 ttk.Button(main, text = "Plural", command = lambda: pyperclip.copy(r"This is an abstract noun and should be plural. :)")).grid(column = 1, row = row, sticky = (W, E))
-ttk.Button(main, text = "Article", command = lambda: pyperclip.copy(r"This is an abstract noun, so it doesn't need an article.")).grid(column = 2, row = row, sticky = (W, E))
+ttk.Button(main, text = "Article", command = lambda: pyperclip.copy(r"This is an abstract noun, so it doesn't need an article. :)")).grid(column = 2, row = row, sticky = (W, E))
 ttk.Button(main, text = "Summary", command = lambda: pyperclip.copy(r"Abstract nouns are nouns that refer to things in general. They're written in their plural forms without any articles.")).grid(column = 3, row = row, sticky = (W, E))
 
 row += 1
 
 #Prepositions
 ttk.Label(main, text = "Prepositions").grid(column = 0, row = row, sticky = W)
-ttk.Button(main, text = "None", command = lambda: pyperclip.copy(r"This needs a preposition.")).grid(column = 1, row = row, sticky = (W, E))
+ttk.Button(main, text = "None", command = lambda: pyperclip.copy(r"This needs a preposition. :)")).grid(column = 1, row = row, sticky = (W, E))
 ttk.Button(main, text = "Wrong", command = lambda: pyperclip.copy(r"Try another preposition. :)")).grid(column = 2, row = row, sticky = (W, E))
-ttk.Button(main, text = "Summary", command = lambda: pyperclip.copy(r"Here's a guide to prepositions. Because of the nature of the English language, this obviously isn't complete, but you can use Google to figure out what prepositions specific verbs take. :)")).grid(column = 3, row = row, sticky = (W, E))
+ttk.Button(main, text = "Summary", command = lambda: pyperclip.copy(r"Here's a guide to prepositions. It's not complete, but it should give you an idea of how to use some of the common ones. :)")).grid(column = 3, row = row, sticky = (W, E))
 ttk.Button(main, text = "Link", command = lambda: pyperclip.copy(r"https://www.ego4u.com/en/cram-up/grammar/prepositions")).grid(column = 4, row = row, sticky = (W, E))
 
 row += 1
 
 #Plurals and possessives
 ttk.Label(main, text = "Possessives").grid(column = 0, row = row, sticky = W)
-ttk.Button(main, text = "Plural", command = lambda: pyperclip.copy(r"The apostrophe makes this possessive instead of plural.")).grid(column = 1, row = row, sticky = (W, E))
-ttk.Button(main, text = "Possessive", command = lambda: pyperclip.copy(r"This should be possessive.")).grid(column = 2, row = row, sticky = (W, E))
+ttk.Button(main, text = "Plural", command = lambda: pyperclip.copy(r"The apostrophe makes this possessive instead of plural. :)")).grid(column = 1, row = row, sticky = (W, E))
+ttk.Button(main, text = "Possessive", command = lambda: pyperclip.copy(r"This should be possessive. :)")).grid(column = 2, row = row, sticky = (W, E))
 ttk.Button(main, text = "Summary", command = lambda: pyperclip.copy(r"Be careful with your plurals and your possessives. :) Here's a guide on the grammar differences between the two.")).grid(column = 3, row = row, sticky = (W, E))
 ttk.Button(main, text = "Link", command = lambda: pyperclip.copy(r"http://www.englishbaby.com/lessons/grammar/plural_vs_possessive_s")).grid(column = 4, row = row, sticky = (W, E))
 
@@ -64,7 +64,7 @@ row += 1
 
 #Countable and uncountable nouns
 ttk.Label(main, text = "Countable").grid(column = 0, row = row, sticky = W)
-ttk.Button(main, text = "Plural", command = lambda: pyperclip.copy(r"This was originally an uncountable noun, but changing it to plural forces it to the countable version. This changes the meaning of the word.")).grid(column = 1, row = row, sticky = (W, E))
+ttk.Button(main, text = "Plural", command = lambda: pyperclip.copy(r"This is an uncountable noun and can't be plural. :)")).grid(column = 1, row = row, sticky = (W, E))
 ttk.Button(main, text = "Incompatible", command = lambda: pyperclip.copy(r"This can't be used with uncountable nouns.")).grid(column = 2, row = row, sticky = (W, E))
 ttk.Button(main, text = "Summary", command = lambda: pyperclip.copy(r"Some nouns are categorized as either countable or uncountable, and these have different grammar rules associated with them. :)")).grid(column = 3, row = row, sticky = (W, E))
 ttk.Button(main, text = "Link", command = lambda: pyperclip.copy(r"https://en.oxforddictionaries.com/grammar/countable-nouns")).grid(column = 4, row = row, sticky = (W, E))
@@ -73,8 +73,8 @@ row += 1
 
 #Comma splice
 ttk.Label(main, text = "Comma splice").grid(column = 0, row = row, sticky = W)
-ttk.Button(main, text = "Text", command = lambda: pyperclip.copy(r"This is a comma splice.")).grid(column = 1, row = row, sticky = (W, E))
-ttk.Button(main, text = "Summary", command = lambda: pyperclip.copy(r"Watch out for comma splicing when you write. :)")).grid(column = 3, row = row, sticky = (W, E))
+ttk.Button(main, text = "Text", command = lambda: pyperclip.copy(r"This is a comma splice. :)")).grid(column = 1, row = row, sticky = (W, E))
+ttk.Button(main, text = "Summary", command = lambda: pyperclip.copy(r"Be careful not to splice sentences together with commas when you write. :)")).grid(column = 3, row = row, sticky = (W, E))
 ttk.Button(main, text = "Link", command = lambda: pyperclip.copy(r"http://grammar.ccc.commnet.edu/grammar/runons.htm")).grid(column = 4, row = row, sticky = (W, E))
 
 row += 1
@@ -100,7 +100,7 @@ row += 1
 #Lists
 ttk.Label(main, text = "Lists").grid(column = 0, row = row, sticky = W)
 ttk.Button(main, text = "Consistency", command = lambda: pyperclip.copy(r"Items in a list should all be grammatically sound with the lead-in.")).grid(column = 1, row = row, sticky = (W, E))
-ttk.Button(main, text = "Punctuation", command = lambda: pyperclip.copy(r"There's no need for any punctuation when the lead-in to a list is grammatically sound with the contents.")).grid(column = 2, row = row, sticky = (W, E))
+ttk.Button(main, text = "Punctuation", command = lambda: pyperclip.copy(r"There's no need for any punctuation when the lead-in to a list is grammatically sound with the contents. :)")).grid(column = 2, row = row, sticky = (W, E))
 ttk.Button(main, text = "Summary", command = lambda: pyperclip.copy(r"Here's a guide to grammar around lists. Take a look at the section starting with 'Each listed item also needs to begin in a way that is grammatically compatible with the introductory phrase or clause'. :)")).grid(column = 3, row = row, sticky = (W, E))
 ttk.Button(main, text = "Link", command = lambda: pyperclip.copy(r"https://www.gsbe.co.uk/grammar-lists.html")).grid(column = 4, row = row, sticky = (W, E))
 
@@ -116,8 +116,8 @@ row += 1
 
 #Quotes
 ttk.Label(main, text = "Quotes").grid(column = 0, row = row, sticky = W)
-ttk.Button(main, text = "Period", command = lambda: pyperclip.copy(r"Quotations should only have one period, outside the quotation marks and after the reference.")).grid(column = 1, row = row, sticky = (W, E))
-ttk.Button(main, text = "Summary", command = lambda: pyperclip.copy(r"Be careful about punctuation around your quotes. :) Punctuation goes after the reference and outside the quotation marks so that the entire sentence is ended and the reference is part of the sentence instead of beginning the next sentence.")).grid(column = 2, row = row, sticky = (W, E))
+ttk.Button(main, text = "Period", command = lambda: pyperclip.copy(r"Quotations should only have a period outside the quotation marks and after the reference.")).grid(column = 1, row = row, sticky = (W, E))
+ttk.Button(main, text = "Summary", command = lambda: pyperclip.copy(r"Be careful about punctuation around your quotes. :) Punctuation goes after the reference and outside the quotation. This way, the reference is part of the sentence instead of beginning the next sentence.")).grid(column = 2, row = row, sticky = (W, E))
 ttk.Button(main, text = "Label", command = lambda: pyperclip.copy(r'Quotations should have some of your own text accompanying them. e.g. Einstein explains, "Light travels very fast".')).grid(column = 3, row = row, sticky = (W, E))
 ttk.Button(main, text = "Summary", command = lambda: pyperclip.copy(r"Make sure you're explaining and contextualizing your quotes. :) A quote without an explanation is like a vase in a museum without a label or plaque.")).grid(column = 4, row = row, sticky = (W, E))
 
