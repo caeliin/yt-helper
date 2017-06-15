@@ -18,6 +18,16 @@ main = ttk.Frame(root, padding = "1")
 main.grid(column = 0, row = 0, sticky=(N, W, E, S))
 
 row = 0
+
+#Misc
+ttk.Label(main, text = "Misc").grid(column = 0, row = row, sticky = W)
+ttk.Button(main, text = "Spelling", command = lambda: pyperclip.copy(r"Check the spelling on this. :)")).grid(column = 1, row = row, sticky = (W, E))
+ttk.Button(main, text = "Typo", command = lambda: pyperclip.copy(r"Whoops!")).grid(column = 2, row = row, sticky = (W, E))
+ttk.Button(main, text = "Capital", command = lambda: pyperclip.copy(r"Only the starts of sentences and proper nouns need to be capitalized. :)")).grid(column = 3, row = row, sticky = (W, E))
+ttk.Button(main, text = "Meaning", command = lambda: pyperclip.copy(r"You may want to check the meaning of this. :)")).grid(column = 4, row = row, sticky = (W, E))
+
+row += 1
+
 #Conjugation
 ttk.Label(main, text = "Conjugation").grid(column = 0, row = row, sticky = W)
 ttk.Button(main, text = "Verb", command = lambda: pyperclip.copy(r"Check the conjugation on this verb.")).grid(column = 1, row = row, sticky = (W, E))
